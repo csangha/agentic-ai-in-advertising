@@ -1,0 +1,7 @@
+mcp
+fastapi
+uvicorn
+boto3
+sqlalchemy
+asyncpg
+python-dotenv

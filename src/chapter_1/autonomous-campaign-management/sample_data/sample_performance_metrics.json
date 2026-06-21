@@ -1,0 +1,81 @@
+{
+  "campaign_id": "camp-fitpulse-001",
+  "time_range": "2026-01-16T00:00:00Z to 2026-01-16T23:59:59Z",
+  "aggregate": {
+    "impressions": 125000,
+    "clicks": 3750,
+    "spend": 2840.50,
+    "conversions": 78,
+    "conversion_value": 9126.00,
+    "cpa": 36.42,
+    "ctr": 0.03,
+    "cpm": 22.72,
+    "roas": 3.21
+  },
+  "by_platform": [
+    {
+      "platform": "meta",
+      "impressions": 50000,
+      "clicks": 1500,
+      "spend": 1200.00,
+      "conversions": 35,
+      "cpa": 34.28,
+      "ctr": 0.03,
+      "cpm": 24.00,
+      "frequency": 2.5,
+      "active_creatives": 4
+    },
+    {
+      "platform": "google",
+      "impressions": 40000,
+      "clicks": 1800,
+      "spend": 890.00,
+      "conversions": 25,
+      "cpa": 35.60,
+      "ctr": 0.045,
+      "cpm": 22.25,
+      "frequency": 1.8,
+      "active_creatives": 3
+    },
+    {
+      "platform": "amazon",
+      "impressions": 25000,
+      "clicks": 900,
+      "spend": 450.00,
+      "conversions": 12,
+      "cpa": 37.50,
+      "ctr": 0.036,
+      "cpm": 18.00,
+      "frequency": 2.1,
+      "active_creatives": 3
+    },
+    {
+      "platform": "tiktok",
+      "impressions": 30000,
+      "clicks": 1200,
+      "spend": 300.50,
+      "conversions": 6,
+      "cpa": 50.08,
+      "ctr": 0.04,
+      "cpm": 10.02,
+      "frequency": 3.9,
+      "active_creatives": 3
+    }
+  ],
+  "by_creative": [
+    {"creative_id": "crt-001", "theme": "accountability_partner", "hook": "question", "ctr": 0.042, "cpa": 32.14, "frequency": 2.8, "fatigue_signal": false},
+    {"creative_id": "crt-002", "theme": "performance_tracking", "hook": "statistic", "ctr": 0.031, "cpa": 38.50, "frequency": 3.9, "fatigue_signal": true},
+    {"creative_id": "crt-003", "theme": "lifestyle_integration", "hook": "testimonial", "ctr": 0.038, "cpa": 34.90, "frequency": 2.1, "fatigue_signal": false},
+    {"creative_id": "crt-004", "theme": "accountability_partner", "hook": "story", "ctr": 0.045, "cpa": 30.50, "frequency": 1.2, "fatigue_signal": false}
+  ],
+  "pacing": {
+    "status": "ON_TRACK",
+    "expected_spend_to_date": 5000.00,
+    "actual_spend_to_date": 4820.50,
+    "pacing_ratio": 0.964,
+    "projected_exhaustion": "2026-02-15",
+    "daily_budget_needed": 1807.18,
+    "days_remaining": 25
+  },
+  "anomalies": []
+}

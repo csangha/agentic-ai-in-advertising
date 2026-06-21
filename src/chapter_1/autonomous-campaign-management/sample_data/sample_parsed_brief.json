@@ -1,0 +1,18 @@
+{
+  "brief_id": "brief-a1b2c3d4",
+  "budget_total": 50000.00,
+  "target_cpa": 35.00,
+  "audience_description": "Affluent, health-conscious consumers aged 25-55 in major U.S. metros",
+  "platforms": ["meta", "google", "tiktok", "amazon"],
+  "sentiment_threshold": 0.75,
+  "geographic_targeting": "Major U.S. metros",
+  "age_range": "25-55",
+  "interests": ["fitness", "health", "wellness", "technology", "wearables"],
+  "campaign_duration_days": 30,
+  "constraints": {
+    "brand_safety": "family_friendly",
+    "min_roas": "2.5"
+  },
+  "is_valid": true,
+  "validation_errors": []
+}

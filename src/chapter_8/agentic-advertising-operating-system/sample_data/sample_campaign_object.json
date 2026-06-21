@@ -1,0 +1,10 @@
+{
+  "campaign_id": "camp-fitpulse-001",
+  "organization_id": "org-acme-agency",
+  "lifecycle_stage": "ACTIVE",
+  "strategy": {"hypothesis": "Clean performance hydration for active adults 30-50", "target_audience": "Health-conscious professionals", "positioning": "Performance without compromise"},
+  "creative": {"approved_territories": ["accountability_partner", "performance_tracking"], "active_variants": 6},
+  "execution": {"platforms": ["meta", "google", "amazon", "tiktok"], "budget_total": 50000, "guardrails": ["BUDGET_CAP", "CPA_CEILING", "BID_CHANGE_LIMIT"]},
+  "measurement": {"attribution_model": "data_driven", "active_experiments": ["exp-geo-meta-001"]},
+  "learning": {"key_learnings": ["Accountability theme outperforms by 22%", "TikTok CPA too high — audience mismatch"]}
+}

@@ -1,0 +1,10 @@
+{
+  "campaign_id": "camp-fitpulse-001",
+  "product": "FitPulse Pro fitness tracker",
+  "target_audience": "Health-conscious professionals 30-50 who exercise 4+ times per week",
+  "emotional_tone": "Empowering yet approachable",
+  "positioning": "The fitness tracker that adapts to your life, not the other way around",
+  "platforms": ["meta", "google", "tiktok", "amazon"],
+  "formats_required": ["static_1x1", "video_9x16", "carousel", "display_728x90"],
+  "brand_guidelines_url": "s3://brand-assets/fitpulse/guidelines.pdf"
+}

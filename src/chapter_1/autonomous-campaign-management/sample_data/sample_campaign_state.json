@@ -1,0 +1,34 @@
+{
+  "campaign_id": "camp-fitpulse-001",
+  "brief_id": "brief-a1b2c3d4",
+  "status": "ACTIVE",
+  "budget_total": 50000.00,
+  "budget_spent": 4820.50,
+  "budget_remaining": 45179.50,
+  "daily_budget": 1666.67,
+  "target_cpa": 35.00,
+  "current_cpa": 36.42,
+  "target_roas": 3.0,
+  "current_roas": 3.2,
+  "sentiment_threshold": 0.75,
+  "current_sentiment": 0.82,
+  "start_date": "2026-01-15T00:00:00Z",
+  "end_date": "2026-02-14T00:00:00Z",
+  "flight_days": 30,
+  "platform_configs": {
+    "meta": {"campaign_objective": "CONVERSIONS", "bid_strategy": "TARGET_CPA", "daily_budget": 600},
+    "google": {"campaign_type": "SHOPPING", "bid_strategy": "TARGET_CPA", "daily_budget": 450},
+    "amazon": {"campaign_type": "SPONSORED_PRODUCTS", "bid_strategy": "DYNAMIC_BIDS_DOWN_ONLY", "daily_budget": 350},
+    "tiktok": {"campaign_objective": "CONVERSIONS", "bid_strategy": "COST_CAP", "daily_budget": 266.67}
+  },
+  "initial_allocation": {
+    "meta": 0.36,
+    "google": 0.27,
+    "amazon": 0.21,
+    "tiktok": 0.16
+  },
+  "created_at": "2026-01-14T10:00:00Z",
+  "approved_at": "2026-01-14T14:30:00Z",
+  "approved_by": "sarah.wang@acme-agency.com",
+  "launched_at": "2026-01-15T00:00:00Z"
+}

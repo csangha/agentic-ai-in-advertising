@@ -1,0 +1,51 @@
+[
+  {
+    "entry_id": "aud-001",
+    "campaign_id": "camp-fitpulse-001",
+    "timestamp": "2026-01-16T14:30:00Z",
+    "agent": "optimization_agent",
+    "action_type": "BID_CHANGE",
+    "pre_state": {"platform": "tiktok", "bid": 2.50, "cpa": 50.08},
+    "post_state": {"platform": "tiktok", "bid": 2.30, "cpa": 50.08},
+    "reasoning": "TikTok CPA $50.08 exceeds target $35.00 by 43%. Reducing bid by 8% to improve efficiency. Frequency at 3.9 suggests audience saturation beginning.",
+    "metrics_at_decision": {"current_cpa": 50.08, "target_cpa": 35.00, "ctr": 0.04, "frequency": 3.9, "conversions_24h": 6},
+    "confidence_score": "0.82",
+    "guardrail_check_passed": true,
+    "guardrail_details": {"checks_run": 5, "all_passed": true},
+    "reversible": true,
+    "reversed": false,
+    "correlation_id": "cycle-2026-01-16-14"
+  },
+  {
+    "entry_id": "aud-002",
+    "campaign_id": "camp-fitpulse-001",
+    "timestamp": "2026-01-16T16:00:00Z",
+    "agent": "monitoring_agent",
+    "action_type": "CREATIVE_PAUSE",
+    "pre_state": {"creative_id": "crt-002", "status": "active", "ctr": 0.031},
+    "post_state": {"creative_id": "crt-002", "status": "paused", "ctr": 0.031},
+    "reasoning": "Creative crt-002 (performance_tracking theme) showing fatigue: CTR declined 22% from peak (0.040 → 0.031), frequency at 3.9 exceeds 3.5 threshold. Pausing and activating crt-004 from queue.",
+    "metrics_at_decision": {"ctr_peak": 0.040, "ctr_current": 0.031, "ctr_decline_pct": 0.225, "frequency": 3.9},
+    "confidence_score": "0.91",
+    "guardrail_check_passed": true,
+    "reversible": true,
+    "reversed": false,
+    "correlation_id": "cycle-2026-01-16-16"
+  },
+  {
+    "entry_id": "aud-003",
+    "campaign_id": "camp-fitpulse-001",
+    "timestamp": "2026-01-17T11:47:00Z",
+    "agent": "creative_agent",
+    "action_type": "TREND_DETECTED",
+    "pre_state": {},
+    "post_state": {"trend": "fitness accountability partners", "velocity_pct": 340, "platform": "tiktok"},
+    "reasoning": "Detected trending conversation on TikTok: 'fitness accountability partners' — 340% above baseline velocity. Relevant to campaign product category. Generated 3 creative variants aligned with this narrative.",
+    "metrics_at_decision": {"trend_velocity": 340, "relevance_score": 0.87, "platform": "tiktok"},
+    "confidence_score": "0.78",
+    "guardrail_check_passed": true,
+    "reversible": true,
+    "reversed": false,
+    "correlation_id": "trend-accountability-001"
+  }
+]

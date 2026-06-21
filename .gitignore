@@ -1,0 +1,43 @@
+# Book manuscript (do not check in)
+Agentic AI In Advertising 0517-1204.docx.txt
+
+# Kiro specs and metadata
+.kiro/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Environment files (contain secrets)
+.env
+*.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# CDK
+cdk.out/
+.cdk.staging/
+
+# Node (CDK dependencies)
+node_modules/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/

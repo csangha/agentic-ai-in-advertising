@@ -1,0 +1,7 @@
+{
+  "client_id": "client-fitpulse",
+  "category": "fitness_wearables",
+  "competitors": ["Fitbit", "Apple Watch", "Garmin", "Whoop", "Oura"],
+  "keywords": ["fitness tracker", "health wearable", "activity monitor", "sleep tracking"],
+  "alert_config": {"max_per_week": 3, "min_confidence": 0.7, "channels": ["slack", "email"]}
+}

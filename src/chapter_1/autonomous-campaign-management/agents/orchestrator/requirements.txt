@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+langchain
+langchain-core
+langchain-aws
+langgraph
+pydantic
+boto3
+python-dotenv
+httpx
+redis
+sqlalchemy[asyncio]
+asyncpg

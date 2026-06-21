@@ -1,0 +1,44 @@
+[
+  {
+    "decision_id": "dec-001",
+    "agent_id": "agent-optimization-001",
+    "campaign_id": "camp-fitpulse-001",
+    "function_area": "bidding_small",
+    "proposed_action": {"action": "BID_CHANGE", "platform": "tiktok", "bid_change_pct": -0.08},
+    "reasoning": "TikTok CPA $50.08 exceeds target $35 by 43%. Reducing bid to improve efficiency.",
+    "confidence_score": 0.82,
+    "magnitude": 0.04,
+    "reversibility": 0.9,
+    "novelty_factor": 1.0,
+    "expected_routing": "AUTONOMOUS",
+    "comment": "Low magnitude, high reversibility, good confidence → should proceed autonomously"
+  },
+  {
+    "decision_id": "dec-002",
+    "agent_id": "agent-optimization-001",
+    "campaign_id": "camp-fitpulse-001",
+    "function_area": "budget_large",
+    "proposed_action": {"action": "BUDGET_REALLOC", "from_platform": "tiktok", "to_platform": "meta", "amount": 8000},
+    "reasoning": "Meta outperforming TikTok significantly. Proposing major budget shift.",
+    "confidence_score": 0.55,
+    "magnitude": 0.35,
+    "reversibility": 0.7,
+    "novelty_factor": 1.5,
+    "expected_routing": "ESCALATE",
+    "comment": "Low confidence + high magnitude + novel situation → must escalate"
+  },
+  {
+    "decision_id": "dec-003",
+    "agent_id": "agent-monitoring-001",
+    "campaign_id": "camp-fitpulse-001",
+    "function_area": "crisis",
+    "proposed_action": {"action": "CAMPAIGN_PAUSE", "platform": "all", "reason": "Brand safety incident detected"},
+    "reasoning": "Brand safety classifier detected ad placement next to controversial content.",
+    "confidence_score": 0.95,
+    "magnitude": 1.0,
+    "reversibility": 0.95,
+    "novelty_factor": 1.0,
+    "expected_routing": "EMERGENCY",
+    "comment": "Crisis function → emergency routing regardless of other factors"
+  }
+]

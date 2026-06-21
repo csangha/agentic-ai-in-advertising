@@ -1,0 +1,14 @@
+{
+  "campaign_id": "camp-fitpulse-001",
+  "platforms": {
+    "meta": {"spend": 1200, "impressions": 50000, "clicks": 1500, "conversions": 35, "cpa": 34.28, "ctr": 0.03, "frequency": 2.5},
+    "google": {"spend": 890, "impressions": 40000, "clicks": 1800, "conversions": 25, "cpa": 35.60, "ctr": 0.045, "frequency": 1.8},
+    "amazon": {"spend": 450, "impressions": 25000, "clicks": 900, "conversions": 12, "cpa": 37.50, "ctr": 0.036, "frequency": 2.1},
+    "tiktok": {"spend": 300, "impressions": 30000, "clicks": 1200, "conversions": 6, "cpa": 50.00, "ctr": 0.04, "frequency": 3.9}
+  },
+  "target_cpa": 35.00,
+  "total_budget": 50000,
+  "spent_to_date": 4820,
+  "campaign_start": "2026-01-15",
+  "campaign_end": "2026-02-14"
+}

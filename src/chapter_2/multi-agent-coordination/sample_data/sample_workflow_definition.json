@@ -1,0 +1,45 @@
+{
+  "workflow_id": "wf-trend-response-001",
+  "name": "Trend Response Workflow",
+  "description": "Detected trend → verify with research → generate creative → compliance check → launch test",
+  "steps": [
+    {
+      "step_id": "step-1",
+      "name": "Verify Trend Relevance",
+      "agent_id": "agent-research-001",
+      "task_payload": {"action": "verify_trend", "trend": "fitness accountability partners", "velocity_pct": 340, "campaign_id": "camp-fitpulse-001"},
+      "depends_on": [],
+      "timeout_seconds": 120,
+      "max_retries": 2
+    },
+    {
+      "step_id": "step-2",
+      "name": "Generate Trend-Aligned Creative",
+      "agent_id": "agent-creative-001",
+      "task_payload": {"action": "generate_trend_creative", "trend": "fitness accountability partners", "num_variants": 3, "campaign_id": "camp-fitpulse-001"},
+      "depends_on": ["step-1"],
+      "condition": "step_step-1_result.get('relevant', False) == True",
+      "timeout_seconds": 180,
+      "max_retries": 1
+    },
+    {
+      "step_id": "step-3",
+      "name": "Compliance Check",
+      "agent_id": "agent-creative-001",
+      "task_payload": {"action": "check_compliance", "variants_from_step": "step-2"},
+      "depends_on": ["step-2"],
+      "timeout_seconds": 60,
+      "max_retries": 1
+    },
+    {
+      "step_id": "step-4",
+      "name": "Launch Test Variants",
+      "agent_id": "agent-orchestrator-001",
+      "task_payload": {"action": "launch_creative_test", "budget_pct": 0.10, "campaign_id": "camp-fitpulse-001"},
+      "depends_on": ["step-3"],
+      "condition": "step_step-3_result.get('all_passed', False) == True",
+      "timeout_seconds": 120,
+      "max_retries": 2
+    }
+  ]
+}

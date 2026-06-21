@@ -1,0 +1,57 @@
+[
+  {
+    "agent_id": "agent-orchestrator-001",
+    "name": "Campaign Orchestrator",
+    "version": "1.0.0",
+    "capabilities": ["campaign_management", "workflow_coordination", "decision_routing"],
+    "supported_tasks": ["launch_campaign", "optimization_cycle", "daily_report"],
+    "tools_required": ["metrics_query", "guardrail_check", "bid_adjustment", "creative_rotation"],
+    "endpoint": "arn:aws:bedrock-agentcore:us-east-1:123456789:runtime/campaign-orchestrator",
+    "status": "ACTIVE",
+    "metadata": {"port": 9000, "chapter": 1}
+  },
+  {
+    "agent_id": "agent-monitoring-001",
+    "name": "Monitoring Agent",
+    "version": "1.0.0",
+    "capabilities": ["metrics_ingestion", "anomaly_detection", "pacing_analysis"],
+    "supported_tasks": ["ingest_metrics", "detect_anomalies", "check_pacing", "freshness_check"],
+    "tools_required": ["metrics_query", "alert_send"],
+    "endpoint": "arn:aws:bedrock-agentcore:us-east-1:123456789:runtime/monitoring-agent",
+    "status": "ACTIVE",
+    "metadata": {"port": 9001, "chapter": 1}
+  },
+  {
+    "agent_id": "agent-optimization-001",
+    "name": "Optimization Agent",
+    "version": "1.0.0",
+    "capabilities": ["bid_optimization", "budget_allocation", "diminishing_returns_detection"],
+    "supported_tasks": ["compute_bid_change", "recommend_reallocation", "evaluate_saturation"],
+    "tools_required": ["metrics_query", "guardrail_check", "bid_adjustment"],
+    "endpoint": "arn:aws:bedrock-agentcore:us-east-1:123456789:runtime/optimization-agent",
+    "status": "ACTIVE",
+    "metadata": {"port": 9002, "chapter": 1}
+  },
+  {
+    "agent_id": "agent-creative-001",
+    "name": "Creative Orchestrator",
+    "version": "1.0.0",
+    "capabilities": ["creative_generation", "brand_voice_check", "compliance_check", "concept_exploration"],
+    "supported_tasks": ["generate_territories", "generate_copy", "check_compliance", "detect_fatigue"],
+    "tools_required": ["brand_kb_query", "image_generation", "compliance_rules"],
+    "endpoint": "arn:aws:bedrock-agentcore:us-east-1:123456789:runtime/creative-orchestrator",
+    "status": "ACTIVE",
+    "metadata": {"port": 9020, "chapter": 4}
+  },
+  {
+    "agent_id": "agent-research-001",
+    "name": "Research Orchestrator",
+    "version": "1.0.0",
+    "capabilities": ["trend_detection", "competitive_intelligence", "sentiment_analysis", "opportunity_scoring"],
+    "supported_tasks": ["analyze_pitch", "monitor_category", "score_opportunities"],
+    "tools_required": ["search_trends", "social_listen", "ad_library_scan"],
+    "endpoint": "arn:aws:bedrock-agentcore:us-east-1:123456789:runtime/research-orchestrator",
+    "status": "ACTIVE",
+    "metadata": {"port": 9010, "chapter": 3}
+  }
+]

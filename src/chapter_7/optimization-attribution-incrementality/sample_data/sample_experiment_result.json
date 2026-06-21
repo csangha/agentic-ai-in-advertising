@@ -1,0 +1,10 @@
+{
+  "experiment_id": "exp-geo-meta-001",
+  "channel": "meta",
+  "type": "geo_suppression",
+  "hypothesis": "Meta upper-funnel drives incremental conversions beyond last-click attribution",
+  "treatment_regions": ["NY", "LA", "CHI"],
+  "control_regions": ["PHI", "HOU", "PHX"],
+  "duration_days": 28,
+  "results": {"lift_estimate": 0.15, "confidence_interval": [0.08, 0.22], "p_value": 0.002, "significant": true}
+}

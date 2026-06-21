@@ -1,0 +1,9 @@
+{
+  "client_name": "FitPulse",
+  "category": "Premium Fitness Trackers",
+  "target_market": "Affluent health-conscious consumers aged 25-55 in major US metros",
+  "competitors": ["Fitbit", "Apple Watch", "Garmin", "Whoop"],
+  "key_questions": ["What positioning gaps exist?", "Which audience segments are underserved?", "What cultural narratives are emerging?"],
+  "timeline_days": 10,
+  "priority": "urgent"
+}

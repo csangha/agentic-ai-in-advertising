@@ -1,0 +1,73 @@
+[
+  {
+    "guardrail_id": "gr-001",
+    "campaign_id": "camp-fitpulse-001",
+    "guardrail_type": "BUDGET_CAP",
+    "description": "Total campaign budget cannot be exceeded under any circumstance",
+    "threshold_value": 50000.00,
+    "action_on_breach": "block",
+    "is_hard_limit": true,
+    "enabled": true
+  },
+  {
+    "guardrail_id": "gr-002",
+    "campaign_id": "camp-fitpulse-001",
+    "guardrail_type": "BID_CHANGE_LIMIT",
+    "description": "Maximum bid change per optimization cycle",
+    "threshold_pct": 0.15,
+    "action_on_breach": "block",
+    "is_hard_limit": true,
+    "enabled": true
+  },
+  {
+    "guardrail_id": "gr-003",
+    "campaign_id": "camp-fitpulse-001",
+    "guardrail_type": "CPA_CEILING",
+    "description": "Pause campaigns if CPA exceeds 200% of target for more than 4 hours",
+    "threshold_pct": 2.0,
+    "threshold_duration_hours": 4.0,
+    "action_on_breach": "block",
+    "is_hard_limit": true,
+    "enabled": true
+  },
+  {
+    "guardrail_id": "gr-004",
+    "campaign_id": "camp-fitpulse-001",
+    "guardrail_type": "SPEND_RATE",
+    "description": "Budget reallocation exceeding 20% of daily budget requires human approval",
+    "threshold_pct": 0.20,
+    "action_on_breach": "escalate",
+    "is_hard_limit": false,
+    "enabled": true
+  },
+  {
+    "guardrail_id": "gr-005",
+    "campaign_id": "camp-fitpulse-001",
+    "guardrail_type": "SENTIMENT_FLOOR",
+    "description": "Halt creative generation if brand sentiment drops below 75%",
+    "threshold_value": 0.75,
+    "action_on_breach": "block",
+    "is_hard_limit": true,
+    "enabled": true
+  },
+  {
+    "guardrail_id": "gr-006",
+    "campaign_id": "camp-fitpulse-001",
+    "guardrail_type": "AUDIENCE_CONCENTRATION",
+    "description": "Maintain minimum 70% of budget on proven audiences",
+    "threshold_pct": 0.70,
+    "action_on_breach": "block",
+    "is_hard_limit": true,
+    "enabled": true
+  },
+  {
+    "guardrail_id": "gr-007",
+    "campaign_id": "camp-fitpulse-001",
+    "guardrail_type": "ESCALATION_THRESHOLD",
+    "description": "Any action affecting more than 30% of total budget requires human approval",
+    "threshold_pct": 0.30,
+    "action_on_breach": "escalate",
+    "is_hard_limit": false,
+    "enabled": true
+  }
+]
